@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../common/image/logo.png" type="image/x-icon">
+    <title>Writing - Trang chủ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../common/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common/css/base.css">
+    <link rel="stylesheet" href="../common/css/grid.css">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js"></script>
+</head>
+<body>
+    <div id="app-content">
+        <div id="app-header">
+            <div class="grid wide col">
+                <div class="header-navbar row no-gutters">
+                    <div class="navbar_element row no-gutters">
+                        <div class="navbar-logo">
+                            <a href="#" class="navbar-logo_link">
+                                <img src="../common/image/logo.png" alt="writing">
+                            </a>
+                        </div>
+                        <div class="navbar-about">
+                            <a href="#" class="about_link">Về chúng tôi</a>
+                        </div>
+                    </div>
+                    <div class="navbar_element navbar-search row no-gutters">
+                        <i class="navbar_back-icon fa-solid fa-arrow-left" style="display: none;"></i>
+                        <input class="navbar-search_type" type="search" placeholder="Nhập nội dung tìm kiếm">
+                        <i class="search_icon fa-solid fa-magnifying-glass"></i>
+                        <i class="search_icon_mobile fa-solid fa-magnifying-glass"></i>
+                    </div> 
+                    <div class="navbar_element">
+                        <div class="navbar_new-post">
+                            <a href="./write.html" class="new-post_btn">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Viết bài</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar_element row no-gutters">
+                        <div class="navbar-user">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="app-body">
+            <div class="content-categories">
+                <div class="grid wide col">
+                    <ul class="content-category_list row no-gutters">
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid wide col">
+                <div class="content-title">
+                    <span>BÀI VIẾT ĐÃ GHIM</span>
+                </div>
+                <div class="content-posts_pin post_list">
+                    
+                </div>
+            </div>
+            
+            <div class="content-posts_news">
+                <div class="grid wide col">
+                    <div class="content-title">
+                        <span>MỚI NHẤT</span>
+                    </div>
+                    <div class="content-posts row">
+
+                    </div> 
+                </div>
+
+                <div class="grid wide">
+                    <ul id="pagination" class="pagination">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="app-footer">
+            <div class="footer-content">
+                <div class="grid wide col">
+                    <div class="footer-heading row no-gutters">
+                        <div class="footer-logo l-6 m-6">
+                            <a href="#" class="footer-logo_link">
+                                <img src="../common/image/logo.png" alt="Writing">
+                            </a>
+                        </div>
+                        <div class="footer-rules l-6 m-6">
+                            <a href="#">NGUYÊN TẮC CỘNG ĐỒNG</a>
+                        </div>
+                    </div>
+                    <div class="footer-body row no-gutters">
+                        <div class="footer-description l-6 m-6">
+                            <p>Project cá nhân chuẩn bị cho xin việc thực tập</p><br>
+                            <h3>Mô hình: RESTful API</h3><br>
+                            <h3>Công nghệ sử dụng</h3>
+                            <p>Backend: Java (Spring boot), JWT Authentication</p>
+                            <p>Database: MySQL</p>
+                            <p>Frontend: HTML, CSS, Javascript, CKeditor library</p>
+                            <p>Deploy: AWS</p>
+                        </div>
+                        <div class="footer-contact l-6 m-6">
+                            <ul class="footer-contact_list">
+                                <li class="footer-contact_item">
+                                    <a href="mailto:cuong.fithau@gmail.com" class="footer-contact_link">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>cuong.fithau@gmail.com</p>
+                                    </a>
+                                </li>
+                                <li class="footer-contact_item">
+                                    <a href="tel:0865235802" class="footer-contact_link">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>0865235802</p>
+                                    </a>
+                                </li>
+                                <li class="footer-contact_item">
+                                    <a href="https://github.com/cuonvc" class="footer-contact_link">
+                                        <i class="fa-brands fa-github"></i>
+                                        <p>cuonvc</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <h3>&copy; Copyright 2022</h3>
+                        <p>Bản quyền thuộc về Cuong Nguyen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="to-top">
+            <div class="to-top_btn" onclick="toTheTop()">
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        alert("Server đang lỗi - Error 500");
+    </script>
+
+    <script src="../common/js/base.js"></script>
+    <script src="./assets/js/data.home.js"></script>
+
+    <script>
+        $('#pagination').twbsPagination({
+            totalPages: 100,
+            visiblePages: 5,
+            next: '>',
+            prev: '<',
+            onPageClick: function (event, page) {
+                //fetch content and render here
+                renderPostsNew(page);
+            }
+        });
+
+        function renderPostsNew(pageNo) {
+            fetch(`https://nvc-rest-blog.herokuapp.com/api/v1/posts?pageNo=${pageNo - 1}&pageSize=5&sortBy=id&sortDir=desc`)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(posts) {
+                let htmls = "";
+                let arrPosts = posts.content;
+                arrPosts.forEach(post => {
+                    var firstCategory = post.categories[0];
+                    var finalDate = formatDate(post.createdDate);
+                    let html = `
+                        <div class="col l-3 m-4 s-12">
+                            <div class="content-post_new">
+                                <a style="cursor: pointer" href="./post.html#${post.id}" class="post-link content-post_link">
+                                    <div class="content-post_image" style="background-image: url(${post.thumbnails});">
+                                    </div>
+                                </a>
+                                
+                                <div class="content-post_text">
+                                    <div class="content-post_categories">
+                                        <a href="#" class="content-post_category">${firstCategory.name}</a>
+                                    </div>
+                                    <div class="content-post_title">
+                                        <a style="cursor: pointer" href="./post.html#${post.id}" class="post-link content-post_link">${post.title}</a>
+                                    </div>
+                                    <div class="content-post_description">
+                                        <p>${post.description}</p>
+                                    </div>
+                                    <div class="content-post_info">
+                                        <a href="./user.html#${post.userProfile.usernameByUser}" class="content-post_auth">
+                                            <img src="${post.userProfile.avatarPhoto}" alt="Avartar">
+                                            <span>
+                                                ${post.userProfile.firstName} ${post.userProfile.lastName}
+                                                <i style="display: none;" class="icon_admin-name fa-solid fa-circle-check"></i>
+                                            </span>
+                                        </a>
+                                        <div class="content-post_time">
+                                            <i class="fa-solid fa-clock"></i>
+                                            <span>${finalDate}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `
+                    htmls += html;
+                });
+                document.querySelector(".content-posts").innerHTML = htmls;
+                var confirmIcons = document.querySelector(".content-posts")
+                    .querySelectorAll(".icon_admin-name");
+                    
+                for (let i = 0; i < arrPosts.length; i++) {
+                    if (arrPosts[i].userProfile.roles[0].name === "ROLE_ADMIN") {
+                        console.log(confirmIcons[i]);
+                        confirmIcons[i].style.display = "inline";
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

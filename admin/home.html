@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../common/image/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Writing - Manager</title>
+    <link rel="stylesheet" href="../common/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common/css/base.css">
+    <link rel="stylesheet" href="../common/css/grid.css">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+</head>
+<body>
+    <div id="app-content">
+        <div id="app-header">
+            <div class="grid wide col">
+                <div class="header-navbar row no-gutters">
+                    <div class="navbar_element row no-gutters">
+                        <div class="navbar-logo">
+                            <a href="../client/home.html" class="navbar-logo_link">
+                                <img src="../common/image/logo.png" alt="writing">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar_element row no-gutters">
+                        <div class="navbar_element-item">
+                            <a href="#posts" class="navbar_element-item_link">Bài viết</a>
+                        </div>
+                        <div class="navbar_element-item">
+                            <a href="#categories" class="navbar_element-item_link">Thể loại</a>
+                        </div>
+                        <div class="navbar_element-item">
+                            <a href="#users" class="navbar_element-item_link">Người dùng</a>
+                        </div>
+                    </div>
+                    <div class="navbar_element row no-gutters">
+                      <div class="navbar-user">
+                            
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="app-body">
+            <div class="grid wide col">
+                <div id="posts" class="body-posts">
+                    <div class="body-title row">
+                        <span>Danh sách bài viết</span>
+                    </div>
+                    <div class="body-content_list row">
+                        <table class="list-item_posts">
+                        </table>
+                    </div>
+                </div>
+                <div id="categories" class="body-categories">
+                    <div class="body-title row">
+                        <span>Danh sách thể loại bài viết</span>
+                    </div>
+                    <div class="body-create_item">
+                        <span class="body-create_btn" onclick="displayForm()">Thêm một thể loại</span>
+                        <div class="body-create_form" style="display: none;">
+                            <input type="text" class="body-create_type create-category" placeholder="Nhập tên thể loại">
+                            <button type="submit" class="body-create_submit create-category-submit">Thêm</button>
+                        </div>
+                    </div>
+                    <div class="body-content_list row">
+                      <table class="list-item_categories">
+                        
+                      </table>
+                    </div>
+                </div>
+                <div id="users" class="body-users">
+                    <div class="body-title row">
+                        <span>Danh sách người dùng</span>
+                    </div>
+                    <div class="body-create_item">
+                        <span class="body-create_btn" onclick="displayForm()">Thêm một admin mới</span>
+                        <div class="body-create_form" style="display: none;">
+                            <input type="text" class="body-create_type type_last-name" placeholder="Nhập họ">
+                            <input type="text" class="body-create_type type_first-name" placeholder="Nhập tên">
+                            <input type="text" class="body-create_type type_username" placeholder="Nhập username">
+                            <input type="email" class="body-create_type type_email" placeholder="Nhập email">
+                            <input type="password" class="body-create_type type_password" placeholder="Nhập password">
+                            <input type="password" class="body-create_type type_re-password" placeholder="Nhập lại password">
+                            <button type="submit" class="body-create_submit create-admin_btn">Thêm</button>
+                        </div>
+                    </div>
+                    <div class="body-content_list row">
+                        <table class="list-item_admin">
+                        </table>
+                        <table class="list-item_user">
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" style="display: none;">
+        <div class="js-modal_container">
+            <div class="modal-content">
+                <div class="modal_close">
+                    <i class="modal_close_submit fa-solid fa-xmark"></i>
+                </div>
+                <div class="modal-content_header">
+                    <div class="modal-content_title">
+                        <h1>Xác nhận xóa</h1>
+                    </div>
+                </div>
+                <div class="modal-content_body">
+                    <div class="modal-content_input">
+                        <span class="content_submit__btn">OK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/data.home.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+      var createItemForms = document.querySelectorAll(".body-create_form");
+      function displayForm() {
+        for(var i = 0; i < createItemForms.length; i++) {
+            createItemForms[i].style.display = "block";
+        }
+      }
+    </script>
+</body>
+</html>

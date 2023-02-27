@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../common/image/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../common/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../common/css/base.css">
+    <link rel="stylesheet" href="../common/css/grid.css">
+    <link rel="stylesheet" href="../common/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Viết bài</title>
+</head>
+
+<body>
+    <div id="app-content">
+        <div id="app-header">
+            <div class="grid wide col">
+                <div class="header-navbar row no-gutters">
+                    <div class="navbar_element row no-gutters">
+                        <div class="navbar-logo">
+                            <a href="./home.html" class="navbar-logo_link">
+                                <img src="../common/image/logo.png" alt="writing">
+                            </a>
+                        </div>
+                        <div class="navbar-about">
+                            <a href="#" class="about_link">Về chúng tôi</a>
+                        </div>
+                    </div>
+                    <div class="navbar_element navbar-search row no-gutters">
+                        <i class="navbar_back-icon fa-solid fa-arrow-left" style="display: none;"></i>
+                        <input class="navbar-search_type" type="search" placeholder="Nhập nội dung tìm kiếm">
+                        <i class="search_icon fa-solid fa-magnifying-glass"></i>
+                        <i class="search_icon_mobile fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="navbar_element row no-gutters">
+                        <div class="navbar-user">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="app-body">
+            <div class="col">
+                <div id="body-post">
+                    <div class="body-heading">
+                        <h1 class="body-heading_type" spellcheck="false" contentEditable=true
+                            placeholder="Tiêu đề bài viết"></h1>
+                    </div>
+                    <div class="body-content">
+                        <div class="body-content_editor" id="editor"
+                            oninput="this.style.height = '28px'; this.style.height = this.scrollHeight +'px'">
+                            <!-- <img class="body-content_thumbnail" src="https://www.w3schools.com/css/img_lights.jpg" alt="ảnh thumbnail"> -->
+                        </div>
+                    </div>
+                    <div class="body-option row no-gutters">
+                        <span class="body-option_btn">Tiếp theo</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="app-footer" style="display: none;">
+            <div class="footer-content">
+                <div class="grid wide col">
+                    <div class="footer-heading row no-gutters">
+                        <div class="footer-logo l-6 m-6">
+                            <a href="#" class="footer-logo_link">
+                                <img src="../common/image/logo.png" alt="Writing">
+                            </a>
+                        </div>
+                        <div class="footer-rules l-6 m-6">
+                            <a href="#">NGUYÊN TẮC CỘNG ĐỒNG</a>
+                        </div>
+                    </div>
+                    <div class="footer-body row no-gutters">
+                        <div class="footer-description l-6 m-6">
+                            <p>Project cá nhân chuẩn bị cho xin việc thực tập</p><br>
+                            <h3>Mô hình: RESTful API</h3><br>
+                            <h3>Công nghệ sử dụng</h3>
+                            <p>Backend: Java (Spring boot), JWT Authentication</p>
+                            <p>Database: MySQL</p>
+                            <p>Frontend: HTML, CSS, Javascript, CKeditor library</p>
+                            <p>Deploy: AWS</p>
+                        </div>
+                        <div class="footer-contact l-6 m-6">
+                            <ul class="footer-contact_list">
+                                <li class="footer-contact_item">
+                                    <a href="mailto:cuong.fithau@gmail.com" class="footer-contact_link">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>cuong.fithau@gmail.com</p>
+                                    </a>
+                                </li>
+                                <li class="footer-contact_item">
+                                    <a href="tel:0865235802" class="footer-contact_link">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>0865235802</p>
+                                    </a>
+                                </li>
+                                <li class="footer-contact_item">
+                                    <a href="https://github.com/cuonvc" class="footer-contact_link">
+                                        <i class="fa-brands fa-github"></i>
+                                        <p>cuonvc</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <h3>&copy; Copyright 2022</h3>
+                        <p>Bản quyền thuộc về Cuong Nguyen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-option" style="display: none;">
+        <div class="js-modal_container">
+            <div class="modal-content">
+                <div class="row no-gutters">
+                    <div class="modal-option_description">
+                        <div class="modal-description_title">
+                            <span>Mô tả ngắn</span>
+                        </div>
+                        <textarea rows="3" name="" class="modal-description_type row no-gutters" spellcheck="false"
+                            placeholder="Mô tả ngắn về bài viết của bạn.">
+
+                        </textarea>
+                    </div>
+                </div>
+                <div class="modal-option_categories">
+                    <span class="option-categories_title">Chọn thể loại</span>
+                    <div class="option-categories_list">
+                        <ul class="row no-gutters option-categories_available">
+
+                        </ul>
+                    </div>
+                    <span class="option-categories_title">Thể loại được chọn</span>
+                    <div class="option-categories_list">
+                        <ul class="row no-gutters option-categories_select">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-content_btns">
+                    <div class="modal-content_btn">
+                        <span class="content-cancel_btn content_btn">Hủy</span>
+                    </div>
+                    <div class="modal-content_btn">
+                        <span class="content-confirm_btn content_btn">Tạo bài viết</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../common/js/base.js"></script>
+    <script src="./assets/js/data.wirte.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script src="../ckeditor/build/ckeditor.js"></script>
+
+    <!-- auto upload post image -->
+    <script async>
+        class MyUploadAdapter {
+            constructor(loader) {
+                // The file loader instance to use during the upload.
+                this.loader = loader;
+            }
+
+            // Starts the upload process.
+            upload() {
+                return new Promise(async (resolve, reject) => {
+                    const file = await this.loader.file;
+
+                    try {
+                        var data = new FormData()
+                        data.append('image', file)
+
+                        const image = await fetch('https://nvc-rest-blog.herokuapp.com/api/v1/post/image', {
+                            method: "POST",
+                            headers: {
+                                "Authorization": `Bearer ${localStorage.getItem("accessToken")}`,
+                            },
+                            body: data
+                        })
+                        .then(response => response.text())
+                        .then(urlImage => {
+                            resolve({ default: urlImage });
+                        })
+
+                    } catch (error) {
+                        console.log('error:',error);
+                        reject(`Không thể tải lên hình ảnh: ${error?.response?.message ?? ''}`);
+                    }
+                });
+            }
+
+            // Aborts the upload process.
+            abort() {
+                // Reject the promise returned from the upload() method.
+
+            }
+        }
+
+        BalloonEditor
+            .create(document.querySelector("#editor"), {
+                placeholder: 'Nhập nội dung bài viết'
+            }).then(editor => {
+                // console.log('ckeditor:', editor);
+                editor.plugins.get('FileRepository').createUploadAdapter = (loader) => {
+                    return new MyUploadAdapter(loader);
+                };
+            })
+
+
+    </script>
+</body>
+
+</html>
